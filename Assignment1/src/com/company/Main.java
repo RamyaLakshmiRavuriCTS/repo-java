@@ -11,7 +11,7 @@ public class Main {
         @Override
         public void printmessage() {
             if (option==1){
-                System.out.println("You have selected Black and White TV");
+                System.out.println("You have selected Black  and White TV");
             }else if (option==2){
                 System.out.println("You have selected Color TV");
             }else {
