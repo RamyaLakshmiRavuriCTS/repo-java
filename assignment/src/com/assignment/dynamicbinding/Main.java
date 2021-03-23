@@ -23,8 +23,8 @@ public class Main {
         System.out.println("Available choices:\n 1. Black and White TV\n 2. Color TV\n Choose one!");
         System.out.println("Enter your choice:");
         option=scanner.nextInt();
-        Main2 main2=new Main2();
-        main2.printmessage();
+        Main main=new Main2();
+        main.printmessage();
     }
 
 }
