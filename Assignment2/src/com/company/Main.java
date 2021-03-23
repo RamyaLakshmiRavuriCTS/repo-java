@@ -4,15 +4,16 @@ import java.util.*;
 class Main {
     public static void main(String[] args)
     {
-        String rev="";
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter a string to reverse:");
-        String input=scanner.nextLine();
-        char[] array = input.toCharArray();
-        for (int i = array.length - 1; i >= 0; i--){
-            rev=rev+array[i];
+        String input="";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the string: ");
+        input = sc.nextLine();
+        StringBuilder builder = new StringBuilder();
+        int len=input.length();
+        for(int i=len-1;i>=0;i--){
+            builder.append(input.charAt(i));
         }
-        System.out.println("Reversed string: "+rev);
+        System.out.println("Reversed string: "+builder);
     }
 }
 
