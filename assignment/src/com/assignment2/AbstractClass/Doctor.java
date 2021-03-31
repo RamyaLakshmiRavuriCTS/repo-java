@@ -1,28 +1,32 @@
 package com.company;
-
-public class Doctor extends Roles{
+//Doctor class extends from abstract class
+public class Doctor extends Person {
+    public Doctor() {
+        super();
+    }
+    //implementing the abstract methods
     @Override
-    String getName() {
+    public String getName() {
         return name;
     }
 
     @Override
-    String getAddress() {
+    public String getAddress() {
         return address;
     }
 
     @Override
-    void setName(String name) {
+    public void setName(String name) {
         this.name=name;
     }
 
     @Override
-    void setAddress(String address) {
+    public void setAddress(String address) {
         this.address=address;
     }
 
     @Override
-    String Roles() {
+    public String Roles() {
         return "Doctor has the responsibility to bring smiles on the faces of suffering humanity";
     }
 }

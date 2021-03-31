@@ -2,11 +2,12 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//SumPair class
 public class SumPair {
     int size;
     ArrayList<Integer> list =  new ArrayList<Integer>();
     Scanner scan = new Scanner(System.in);
+    //method to get arraylist size and elements and display it
     public void getVal() {
         System.out.println("\nEnter the size :");
         size = Integer.parseInt(scan.nextLine());
@@ -16,6 +17,7 @@ public class SumPair {
         }
         System.out.println("Input Array: "+list);
     }
+    //method to print pair of element whose sum is given
     public void printPairs(){
     int sum=0;
         Scanner scanner=new Scanner(System.in);
