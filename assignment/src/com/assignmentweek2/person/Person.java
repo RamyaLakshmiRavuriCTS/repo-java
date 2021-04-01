@@ -4,7 +4,7 @@ This is the abstract class
  */
 public abstract class Person {
         abstract void display();
-        abstract void Address();
+        abstract void address();
         ;
     }
 

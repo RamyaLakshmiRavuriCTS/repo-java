@@ -9,10 +9,10 @@ public class Main {
         Doctor ravi = new Doctor("Ravi","Hyderabad");
         Teacher suresh= new Teacher("Suresh","Nandyal");
         manoj.display();
-        manoj.Address();
+        manoj.address();
         ravi.display();
-        ravi.Address();
+        ravi.address();
         suresh.display();
-        suresh.Address();
+        suresh.address();
     }
 }

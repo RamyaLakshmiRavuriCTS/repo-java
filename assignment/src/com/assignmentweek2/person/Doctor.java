@@ -27,7 +27,7 @@ public class Doctor extends Person{
     }
 
     @Override
-    void Address() {
+    void address() {
         System.out.println("Doctor Address: " + getAddress());
     }
 }
