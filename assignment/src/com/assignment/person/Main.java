@@ -1,38 +1,29 @@
 package com.assignment.person;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String args[]){
 
-        student();
+        //main abstract class object
+        Person p;
 
-        teacher();
+        //student object using abstract class object
+        p=new Student("Hari","vijayawada");
 
-        doctor();
-    }
+        //displaying roles and responsibilities of doctor
+        p.role();
+        p.workResponsibilities();
 
-    //instantiating the student class and calling the abstract methods
-    private static void student() {
-        Student student = new Student("Hari","Vijayawada");
-        student.role();
-        student.workResponsibilities();
-        student.objectsUse();
-        student.timings();
-    }
+        //teacher object using abstract class object
+        p=new Teacher("Vijay", "Hyderabad");
 
-    //instantiating the teacher class and calling the abstract methods
-    private static void teacher() {
-        Teacher teacher = new Teacher("Vijay","Hyderabad");
-        teacher.role();
-        teacher.workResponsibilities();
-        teacher.objectsUse();
-        teacher.timings();
-    }
-    //instantiating the doctor class and calling the abstract methods
-    private static void doctor() {
-        Doctor doctor = new Doctor("Chaitanya","Vizag");
-        doctor.role();
-        doctor.workResponsibilities();
-        doctor.objectsUse();
-        doctor.timings();
+        //displaying roles and responsibilities of teacher
+        p.role();
+        p.workResponsibilities();
+
+        //doctor object using abstract class object
+        p=new Doctor("Chaitanya","Vizag");
+        //displaying roles and responsibilities of doctor
+        p.role();
+        p.workResponsibilities();
     }
 }
