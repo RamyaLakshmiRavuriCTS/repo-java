@@ -1,8 +1,8 @@
 package com.assignmentweek2.person;
 
 public class Teacher extends Person {
-    protected String name;
-    protected String address;
+    private String name;
+    private String address;
     public Teacher(String name, String address) {
         this.name = name;
         this.address = address;
@@ -20,23 +20,15 @@ public class Teacher extends Person {
     public void setAddress(String address) {
         this.address = address;
     }
+
+
     @Override
-    void Studentdisplay() {
-    }
-    void Teacherdisplay(){
+    void display() {
         System.out.println("Teacher Role: "+getName());
     }
+
     @Override
-    void Doctordisplay() {
-    }
-    @Override
-    void StudentAddress() {
-    }
-    @Override
-    void TeacherAddress() {
+    void Address() {
         System.out.println("Teacher Address: "+getAddress());
-    }
-    @Override
-    void DoctorAddress() {
     }
 }

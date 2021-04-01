@@ -4,32 +4,17 @@ package com.assignmentweek2.speedlimit;
 This is the Jawa class
  */
 public class Jawa implements Bike{
-    public double speed;
-
-    public Jawa(double speed) {
-        this.speed = speed;
-    }
-    public double getSpeed() {
-        return speed;
-    }
-    public void setSpeed(double speed) {
-        this.speed = speed;
-    }
+    /*
+This is  Jawa speed method
+ */
     @Override
-    public void speed(double speed) {
-        if (this.speed <= 90 && this.speed>0) {
-            System.out.println("Speed of Bike is : "+getSpeed());
-        }
-        else if(this.speed>90)
-        {
-            System.out.println("Restricting Speed");
-        }
-        else{ System.out.println("Invalid Speed");
-        }
+    public void speed(int speed) {
+        System.out.println("Jawa Bike speed is : " + speedLimit);
     }
+    /*
+This Is Jawa manufacturing name method
+ */
     public void ManufacturerName(){
         System.out.println("Jawa Manufacturer");
     }
-
-
 }
