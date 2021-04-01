@@ -1,5 +1,8 @@
 package com.assignment2.abstraction;
 
+/**
+ * creating a class doctor and extending from person
+ */
 public class Doctor extends Person {
 
     //constructer to get name and address
@@ -7,7 +10,10 @@ public class Doctor extends Person {
         super(name, address);
     }
 
-    //implimenting the abstract methods
+    /*
+     *implimenting the abstract methods
+     *methods to know role, responsibilities, objects, work timings of a doctor
+     */
     @Override
     public void role() {
         System.out.println(getName()+ " is a doctor and stays at " +getAddress());

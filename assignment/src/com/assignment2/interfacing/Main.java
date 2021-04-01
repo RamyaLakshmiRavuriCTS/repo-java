@@ -1,7 +1,11 @@
 package com.assignment2.interfacing;
+
 //importing the default field
 import static com.assignment2.interfacing.IBike.speedLimit;
 
+/*
+ *main method for calling the classes and creating the instances
+ */
 public class Main {
 
     public static void main(String[] args) {

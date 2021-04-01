@@ -1,6 +1,9 @@
 package com.assignment2.SumPairs;
 import java.util.Scanner;
 
+/*
+ *creating a class named application
+ */
 public class Application {
     public static void main(String[] args) {
 
@@ -27,7 +30,7 @@ public class Application {
         findpairs(array, sumNumber);
     }
 
-    //finding the sum pairs in the array
+    //method for finding the sum pairs in the array
     private static void findpairs(int[] array, int sumNumber) {
         System.out.println("Pairs of elements and their sum : ");
         for (int i = 0; i < array.length; i++) {

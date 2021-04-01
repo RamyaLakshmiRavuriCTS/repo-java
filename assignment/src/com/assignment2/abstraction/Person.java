@@ -1,5 +1,8 @@
 package com.assignment2.abstraction;
 
+/*
+ *creating an abstract class person
+ */
 public abstract class Person {
     //creating fields of name and address
     private String name;
@@ -17,7 +20,7 @@ public abstract class Person {
     public abstract void objectsUse();
     public abstract void timings();
 
-    //creating getters of the fields declared above
+    //creating getters of the fields declared above(Name,Address)
     public String getName() {
         return name;
     }

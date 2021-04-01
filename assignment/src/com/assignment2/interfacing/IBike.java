@@ -1,6 +1,8 @@
 package com.assignment2.interfacing;
 
-//creating an interface and declaring the fields
+/*
+ *creating an interface and declaring the fields
+ */
 public interface IBike {
 
     //setting final to restrict the speedlimit field

@@ -1,12 +1,14 @@
 package com.assignment2.abstraction;
-
+/*
+ * main class to implement all the methods
+ */
 public class Main {
     public static void main(String[] args) {
-
+    //calling student method
         student();
-
+    //calling teacher method
         teacher();
-
+    //calling doctor method
         doctor();
     }
 
