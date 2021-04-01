@@ -8,7 +8,7 @@ public class ReverseArray
 {
     public static void main(String[] args)
     {
-        String name = getString();
+    String name = getString();
         reverseArray(name);
     }
 
