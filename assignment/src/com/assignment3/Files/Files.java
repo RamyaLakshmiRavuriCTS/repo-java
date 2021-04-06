@@ -5,15 +5,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
-* creating a class to copy the data from one file to the other fle
+ * creating a class to copy the data from one file to the other fle
  */
 public class Files {
-    public static void main(String[] args) throws IOException {
+    //Creating objects for I/O streaming classes
+    static FileInputStream fileInputStream =null;
+    static FileOutputStream fileOutputStream = null;
+    static FileInputStream fileInputStream1 = null;
 
-        //Creating objects for I/O streaming classes
-        FileInputStream fileInputStream = null;
-        FileOutputStream fileOutputStream = null;
-        int i;
+    public static void main(String[] args) throws IOException {
 
         //try block to handle the exception
         try {
@@ -22,8 +22,16 @@ public class Files {
             //Providing path for target file
             fileOutputStream = new FileOutputStream("C:\\Workspace\\repo-java\\assignment\\src\\com\\assignment3\\Files\\target_file.txt");
             //Copying the text in source file and pasting them in target file
-            while((i=fileInputStream.read()) != -1) {
-                fileOutputStream.write((char)i);
+            int i;
+            while ((i = fileInputStream.read()) != -1) {
+                fileOutputStream.write((char) i);
+            }
+
+            //this is for printing the text in target file
+            fileInputStream1 = new FileInputStream("C:\\Workspace\\repo-java\\assignment\\src\\com\\assignment3\\Files\\target_file.txt");
+            int j;
+            while ((j = fileInputStream1.read()) != -1) {
+                System.out.print((char) j);
             }
         }
         //If any exception occurs, the exception message will be displayed
@@ -34,13 +42,8 @@ public class Files {
         finally {
             fileInputStream.close();
             fileOutputStream.close();
+            fileInputStream1.close();
         }
-        //this is for printing the text in target file
-        FileInputStream fileInputStream1 = new FileInputStream("C:\\Workspace\\repo-java\\assignment\\src\\com\\assignment3\\Files\\target_file.txt");
-        int j;
-        while((j=fileInputStream1.read()) != -1) {
-            System.out.print((char)j);
-        }
-        fileInputStream1.close();
+
     }
 }

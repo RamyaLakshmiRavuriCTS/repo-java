@@ -1,7 +1,12 @@
 package com.assignment3.NullPointerException;
 
+/*
+*creating a class to implement multiple exception handling
+ */
 public class MultipleExceptionHandling {
     public static void main(String[] args) {
+
+        //Handling exception using try catch block
         try{
             int num1=30;
             int num2=0;
