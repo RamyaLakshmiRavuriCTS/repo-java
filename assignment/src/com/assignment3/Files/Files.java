@@ -9,28 +9,28 @@ import java.io.IOException;
  */
 public class Files {
     //Creating objects for I/O streaming classes
-    static FileInputStream fileInputStream =null;
-    static FileOutputStream fileOutputStream = null;
-    static FileInputStream fileInputStream1 = null;
+    public static FileInputStream FILE_INPUT_STREAM =null;
+    public static FileOutputStream FILE_OUTPUT_STREAM = null;
+    public static FileInputStream FILE_INPUT_STREAM1 = null;
 
     public static void main(String[] args) throws IOException {
 
         //try block to handle the exception
         try {
             //Providing path for source file
-            fileInputStream = new FileInputStream("C:\\Workspace\\repo-java\\assignment\\src\\com\\assignment3\\Files\\source_file.txt");
+            FILE_INPUT_STREAM = new FileInputStream("C:\\Workspace\\repo-java\\assignment\\src\\com\\assignment3\\Files\\source_file.txt");
             //Providing path for target file
-            fileOutputStream = new FileOutputStream("C:\\Workspace\\repo-java\\assignment\\src\\com\\assignment3\\Files\\target_file.txt");
+            FILE_OUTPUT_STREAM = new FileOutputStream("C:\\Workspace\\repo-java\\assignment\\src\\com\\assignment3\\Files\\target_file.txt");
             //Copying the text in source file and pasting them in target file
             int i;
-            while ((i = fileInputStream.read()) != -1) {
-                fileOutputStream.write((char) i);
+            while ((i = FILE_INPUT_STREAM.read()) != -1) {
+                FILE_OUTPUT_STREAM.write((char) i);
             }
 
             //this is for printing the text in target file
-            fileInputStream1 = new FileInputStream("C:\\Workspace\\repo-java\\assignment\\src\\com\\assignment3\\Files\\target_file.txt");
+            FILE_INPUT_STREAM1 = new FileInputStream("C:\\Workspace\\repo-java\\assignment\\src\\com\\assignment3\\Files\\target_file.txt");
             int j;
-            while ((j = fileInputStream1.read()) != -1) {
+            while ((j = FILE_INPUT_STREAM1.read()) != -1) {
                 System.out.print((char) j);
             }
         }
@@ -40,9 +40,9 @@ public class Files {
         }
         //this block closes the unclosed stream objects
         finally {
-            fileInputStream.close();
-            fileOutputStream.close();
-            fileInputStream1.close();
+            FILE_INPUT_STREAM.close();
+            FILE_OUTPUT_STREAM.close();
+            FILE_INPUT_STREAM1.close();
         }
 
     }
