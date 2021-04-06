@@ -1,5 +1,7 @@
 package com.assignmentweek3.bankbalance;
-
+/*
+This is the BalanceCalculations class
+ */
 public class BalanceCalculations {
 
    public double currentBalance;

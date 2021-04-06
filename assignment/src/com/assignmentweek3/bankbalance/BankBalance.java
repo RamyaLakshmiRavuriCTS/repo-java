@@ -1,5 +1,7 @@
 package com.assignmentweek3.bankbalance;
-
+/*
+This is the BankBalance class
+ */
 public class BankBalance implements Runnable{
   public  double amount=100;
    public double currentBalance=0;

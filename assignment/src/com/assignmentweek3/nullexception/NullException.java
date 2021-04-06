@@ -1,5 +1,7 @@
 package com.assignmentweek3.nullexception;
-
+/*
+This is the NullException class
+ */
 public class NullException {
     /*
     This is the main method

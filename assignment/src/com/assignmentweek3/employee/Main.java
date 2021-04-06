@@ -2,7 +2,9 @@ package com.assignmentweek3.employee;
 
 import java.util.*;
 import java.util.stream.Collectors;
-
+/*
+This is the main class
+ */
 public class Main {
     /*
     This is the main method
@@ -14,7 +16,7 @@ public class Main {
         Employee employee4= new Employee("EEE", 40000);
         Employee employee5= new Employee("IT", 10000);
 
-        ArrayList<Employee> employees =new ArrayList<Employee>();
+        List<Employee> employees =new ArrayList<Employee>();
         employees.add(employee1);
         employees.add(employee2);
         employees.add(employee3);
@@ -37,7 +39,7 @@ public class Main {
 /*
 This method is to separate EEE employees
  */
-    private static List<Integer> filteringEEEDepartment(ArrayList<Employee> employees) {
+    private static List<Integer> filteringEEEDepartment(List<Employee> employees) {
         return employees.stream()
                     .filter(object -> object.department.equals("EEE"))
                     .map(object1 -> object1.salary)
@@ -46,7 +48,7 @@ This method is to separate EEE employees
     /*
     This method is to separate IT employees
      */
-    private static List<Integer> filteringITDepartment(ArrayList<Employee> employees) {
+    private static List<Integer> filteringITDepartment(List<Employee> employees) {
         return employees.stream()
                     .filter(object -> object.department.equals("IT"))
                     .map(object1 -> object1.salary)
@@ -55,7 +57,7 @@ This method is to separate EEE employees
     /*
     This method is to separate CSE employees
      */
-    private static List<Integer> filteringCseDepartment(ArrayList<Employee> employees) {
+    private static List<Integer> filteringCseDepartment(List<Employee> employees) {
         return employees.stream()
                     .filter(object -> object.department.equals("CSE"))
                     .map(object1 -> object1.salary)

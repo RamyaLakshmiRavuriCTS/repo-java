@@ -1,5 +1,7 @@
 package com.assignmentweek3.deadlock;
-
+/*
+This is the SynchroniseThread class
+ */
 class SynchroniseThread implements Runnable
 {
     private Object object1;

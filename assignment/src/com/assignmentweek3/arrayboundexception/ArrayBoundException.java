@@ -1,5 +1,8 @@
 package com.assignmentweek3.arrayboundexception;
 import java.util.Scanner;
+/*
+This is the ArrayBound Exception class
+ */
 public class ArrayBoundException {
     /*
     This is the main method

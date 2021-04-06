@@ -2,6 +2,9 @@ package com.assignmentweek3.squareofnumber;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;
+/*
+This is the SquareNumber class
+ */
 public class SquareNumber {
     /*
     This is the main method
@@ -33,11 +36,10 @@ public class SquareNumber {
                 .filter(isEven)
                 .forEach(System.out :: println);
     }
+    /*
+    This method is to check whether even or odd
+     */
   private boolean isEven (Integer number){
         return number % 2 == 0;
    }
-
-    interface PrintNumber{
-        public void print (int num);
-    }
 }

@@ -1,5 +1,7 @@
 package com.assignmentweek3.deadlock;
-
+/*
+This is the DeadLock class
+ */
 public class DeadLock {
     /*
     This is the main method
