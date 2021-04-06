@@ -7,18 +7,25 @@ import java.io.IOException;
 This is the FileInputOutput class
  */
 public class FileInputOutput {
+    private static String SOURCE_FILE = "sourcefile.txt";
+    private static String TARGET_FILE ="targetfile.txt";
+    private static File targetfile;
+    private static File sourcefile;
+
     public FileInputOutput(File sourcefile, File targetfile) {
         this.sourcefile = sourcefile;
         this.targetfile = targetfile;
     }
-    static File sourcefile;
-    static File targetfile;
+
+   static File sourcefileOutput =new File(SOURCE_FILE);
+   static File targetfileOutput =new File(TARGET_FILE);
+
     /*
     This is the main method
      */
     public static void main(String[] args) throws IOException,NullPointerException {
 
-        new FileInputOutput((new File("sourcefile.txt")),(new File("targetfile.txt")));
+        new FileInputOutput( sourcefileOutput, targetfileOutput);
         insertingSourceInput();
         copyOfData();
     }
