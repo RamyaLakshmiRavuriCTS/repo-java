@@ -7,6 +7,5 @@ public class Main {
         ExceptionHandling obj=new ExceptionHandling();
         //assigning the methods
         obj.divideByZero();
-        obj.nullPointer();
     }
 }
