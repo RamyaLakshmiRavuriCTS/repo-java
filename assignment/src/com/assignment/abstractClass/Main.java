@@ -7,7 +7,7 @@ public class Main {
         RolesAndResponsibilities r;
 
         //student object using abstract class object
-        r=new Student();
+        r = new Student();
         //setting name and address of the student
         r.setName("Sweetha");
         r.setAddress("Coimbatore");
@@ -17,7 +17,7 @@ public class Main {
         System.out.println(r.rolesAndResponsibilities());
 
         //teacher object using abstract class object
-        r=new Teacher();
+        r = new Teacher();
         //setting name and address of the teacher
         r.setName("Shanthi");
         r.setAddress("Bangalore");
@@ -27,7 +27,7 @@ public class Main {
         System.out.println(r.rolesAndResponsibilities());
 
         //doctor object using abstract class object
-        r=new Doctor();
+        r = new Doctor();
         //setting name and address of the doctor
         r.setName("Shanthosh");
         r.setAddress("Chennai");
