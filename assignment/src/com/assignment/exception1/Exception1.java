@@ -7,7 +7,7 @@ public class Exception1 {
         String str = null;
 
         //catching Arithmetic exception in the catch block
-        try{
+        try {
             System.out.println(num1/num2);
         } catch(ArithmeticException e) {
             System.out.println("End of main");
