@@ -1,5 +1,5 @@
 package com.assignment.week3.lambdaexpressions1;
-
+//This class is used to acquire employee details
 public class Employee {
 
     //Declaring required fields

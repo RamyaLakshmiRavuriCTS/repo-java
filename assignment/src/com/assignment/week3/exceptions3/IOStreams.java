@@ -14,9 +14,9 @@ public class IOStreams {
 
         try {
             //Providing path for source file
-            fileInputStream = new FileInputStream("C:\\Users\\841355\\IdeaProjects\\repo-java\\assignment\\src\\exception3\\source_file.txt");
+            fileInputStream = new FileInputStream("C:\\Users\\841355\\IdeaProjects\\repo-java\\assignment\\src\\com\\assignment\\week3\\exceptions3\\source_file.txt");
             //Providing path for target file
-            fileOutputStream = new FileOutputStream("C:\\Users\\841355\\IdeaProjects\\repo-java\\assignment\\src\\exception3\\target_file.txt");
+            fileOutputStream = new FileOutputStream("C:\\Users\\841355\\IdeaProjects\\repo-java\\assignment\\src\\com\\assignment\\week3\\exceptions3\\target_file.txt");
             //Copying the text in source file and pasting them in target file
             while((i=fileInputStream.read()) != -1) {
                 fileOutputStream.write((char)i);
@@ -32,7 +32,7 @@ public class IOStreams {
             fileOutputStream.close();
         }
         //this is for printing the text in target file
-        FileInputStream fileInputStream1 = new FileInputStream("C:\\Users\\841355\\IdeaProjects\\repo-java\\assignment\\src\\exception3\\target_file.txt");
+        FileInputStream fileInputStream1 = new FileInputStream("C:\\Users\\841355\\IdeaProjects\\repo-java\\assignment\\src\\com\\assignment\\week3\\exceptions3\\target_file.txt");
         int j;
         while((j=fileInputStream1.read()) != -1) {
             System.out.print((char)j);

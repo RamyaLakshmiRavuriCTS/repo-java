@@ -19,6 +19,7 @@ public class AccountTesting implements Runnable{
 
     public void run() {
         makeDeposit();
+        makeWithdrawal();
     }
     //This method is used to deposit amount in the account
     private void makeDeposit() {
@@ -27,7 +28,7 @@ public class AccountTesting implements Runnable{
             currentAmount = bankAccount.deposit(amount);
             System.out.println("Depositing " + amount + ", new balance is " + currentAmount);
         }
-        makeWithdrawal();
+
     }
     //This method is used to deposit amount in the account
     private void makeWithdrawal() {

@@ -17,6 +17,7 @@ public class LambdaAndStreams {
         employeeList.add(new Employee(5,"IT", 10000));
         employeeList.add(new Employee(6,"EEE", 50000));
 
+
         //Filtering employeeList with department and storing them in separate department Lists
         List<Integer> employeeCSE = employeeList.stream().filter(obj -> obj.department.equals("CSE")).map(obj1 -> obj1.salary).collect(Collectors.toList());
         List<Integer> employeeIT = employeeList.stream().filter(obj -> obj.department.equals("IT")).map(obj1 -> obj1.salary).collect(Collectors.toList());
@@ -27,7 +28,7 @@ public class LambdaAndStreams {
         int ITSalary = employeeIT.stream().max((emp1, emp2) -> emp1 > emp2 ? 1:-1).get();
         int EEESalary = employeeEEE.stream().max((emp1, emp2) -> emp1 > emp2 ? 1:-1).get();
 
-        //Printing the output
+
         System.out.println("CSE, "+CSESalary);
         System.out.println("IT, "+ITSalary);
         System.out.println("EEE, "+EEESalary);

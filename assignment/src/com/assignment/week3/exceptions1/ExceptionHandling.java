@@ -6,19 +6,13 @@ public class ExceptionHandling  {
         int num1 = 30, num2 = 0;
         String str = null;
 
-        //catching Arithmetic exception in the catch block
+        //catching Arithmetic exception and Nullpointer Exception using single catch block
         try{
             System.out.println(num1/num2);
-        }
-        catch(ArithmeticException a) {
-            System.out.println("End of main");
-        }
 
-        //catching NullPointerException exception in the catch block
-        try {
             System.out.println(str.length());
         }
-        catch (NullPointerException n) {
+        catch (ArithmeticException | NullPointerException e) {
             System.out.println("End of main");
         }
     }
