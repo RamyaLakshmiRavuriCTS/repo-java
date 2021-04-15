@@ -5,6 +5,7 @@ package com.assignment.springdemo;
  */
 public interface FortuneService {
 	
+	//defining the methods
 	public String getFortune();
 
 }

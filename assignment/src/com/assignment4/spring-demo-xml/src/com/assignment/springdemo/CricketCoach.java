@@ -18,7 +18,7 @@ public class CricketCoach implements Coach {
 			this.fortuneService = fortuneService;
 		}	
 
-		//overriding the methods from interface coach
+	//overriding the methods from interface coach
 	@Override
 	public String getDailyWorkout() {
 		return "Practice fast bowliung for 15 minutes";

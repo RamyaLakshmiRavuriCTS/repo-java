@@ -14,6 +14,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 	
+	
+	//using autowired for dependency injection implicitily
+	//using qualifier annotation to resolve multiple bean issue
 	@Autowired
 	@Qualifier("randomFortuneService")
 	private FortuneService fortuneService;
@@ -42,8 +45,9 @@ public class TennisCoach implements Coach {
 	*/
 	
 	
+	//overriding the methods from coach interface
 	@Override
-	public String getDailyWorkout() {
+	public String getDailyWorkout() { 
 		return "Practice your backhand volley";
 	}
 

@@ -12,7 +12,7 @@ public class TrackCoach implements Coach {
 		
 	}
 
-	
+	//constructor for the method trackcoach
 	public TrackCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}

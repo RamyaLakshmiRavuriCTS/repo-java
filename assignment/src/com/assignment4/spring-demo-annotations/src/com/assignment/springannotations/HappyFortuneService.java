@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class HappyFortuneService implements FortuneService {
 
-	//method override from interface
+	//method override from fortuneservice interface
 	@Override
 	public String getFortune() {
 		

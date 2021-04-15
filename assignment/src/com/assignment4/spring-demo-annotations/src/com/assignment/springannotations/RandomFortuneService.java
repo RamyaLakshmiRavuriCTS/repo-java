@@ -1,9 +1,13 @@
 package com.assignment.springannotations;
 
+//importing random from java util
 import java.util.Random;
 
 import org.springframework.stereotype.Component;
 
+/*
+ * implementing the randomfortuneclass to eamplify quantifier annotation
+ */
 @Component
 public class RandomFortuneService implements FortuneService {
 

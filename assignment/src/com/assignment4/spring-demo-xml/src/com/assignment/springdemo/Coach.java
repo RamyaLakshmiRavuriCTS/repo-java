@@ -5,6 +5,7 @@ package com.assignment.springdemo;
  */
 public interface Coach {
 	
+	//defining the methods
 	public String getDailyWorkout();
 	
 	public String getDailyFortune();
