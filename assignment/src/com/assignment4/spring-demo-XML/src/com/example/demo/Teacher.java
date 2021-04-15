@@ -1,8 +1,10 @@
 package com.example.demo;
-
+//creating class with variables
 public class Teacher {
+	//initializing variables
 	private String name;
 	private String qualification;
+	//getters and setters
 	public String getName() {
 		return name;
 	}
@@ -20,6 +22,7 @@ public class Teacher {
 		this.name = name;
 		this.qualification = qualification;
 	}
+	//method to display staff details
 	public void printStaffDetails() {
 		System.out.println("Name: "+name);
 		System.out.println("Qualification: "+qualification);
