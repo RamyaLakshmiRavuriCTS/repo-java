@@ -9,7 +9,7 @@ public class AnnotationTest {
 		//reading configuration file
 		AnnotationConfigApplicationContext context= new AnnotationConfigApplicationContext(SportsConfig.class);
 		//retrieve bean from the container
-		FootBallSports s=context.getBean("footBallSports",FootBallSports.class);
+		FootBallSports s=context.getBean("footBallSports", FootBallSports.class);
 		//method calling
 		System.out.println(s.getDailyupdate());
 		System.out.println(s.getDailyService()); 
