@@ -2,13 +2,20 @@ package com.assignmentweek4.springwithxml;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/*
+ * This is SetterDemoApp class
+ */
 public class SetterDemoApp {
-
+/*
+ * This is main method
+ */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		try {
+
+			String xmlFile="applicationContext.xml";
+
 		ClassPathXmlApplicationContext context =
-				new ClassPathXmlApplicationContext("applicationContext.xml");
+				new ClassPathXmlApplicationContext("xmlFile");
 		CricketCoach theCoach = context.getBean("myCricketCoach",CricketCoach.class);
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());

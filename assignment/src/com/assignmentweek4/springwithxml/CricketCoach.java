@@ -1,5 +1,8 @@
 package com.assignmentweek4.springwithxml;
 
+/*
+ * This is getDailyFortune class
+ */
 public class CricketCoach implements Coach {
 
 		private FortuneService fortuneService;
@@ -29,6 +32,7 @@ public class CricketCoach implements Coach {
 			System.out.println("Cricket no Arg constructor");
 	}
 	
+		
 		public void setFortuneService(FortuneService thefortuneService) {
 			System.out.println("Cricket inside Setter Method");
 

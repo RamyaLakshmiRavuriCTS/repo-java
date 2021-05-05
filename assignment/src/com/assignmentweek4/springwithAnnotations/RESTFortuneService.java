@@ -1,13 +1,18 @@
 package com.assignmentweek4.springwithAnnotations;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+/*
+ * This is RESTFortuneService class
+ */
+@Service
 public class RESTFortuneService implements FortuneService {
 
+	/*
+	 * This is getFortune method
+	 */
 	@Override
 	public String getFortune() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

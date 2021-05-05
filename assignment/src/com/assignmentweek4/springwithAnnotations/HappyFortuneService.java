@@ -1,10 +1,15 @@
 package com.assignmentweek4.springwithAnnotations;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+/*
+ * This is HappyFortuneService class
+ */
+@Service
 public class HappyFortuneService implements FortuneService {
-
+	/*
+	 * This is getFortune method
+	 */
 	@Override
 	public String getFortune() {
 		

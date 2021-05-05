@@ -1,5 +1,8 @@
 package com.assignmentweek4.springwithxml;
 
+/*
+ * This is BaseballCoach class
+ */
 public class BaseballCoach implements Coach {
 	private FortuneService fortuneService;
 	
@@ -17,7 +20,6 @@ public class BaseballCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
 		return fortuneService.getFortune();
 	}
 }
