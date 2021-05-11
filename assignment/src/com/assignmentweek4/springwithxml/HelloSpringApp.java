@@ -10,7 +10,7 @@ public class HelloSpringApp {
 
 			String xmlFile="applicationContext.xml";
 			ClassPathXmlApplicationContext context =
-					new ClassPathXmlApplicationContext("xmlFile");
+					new ClassPathXmlApplicationContext(xmlFile);
 			
 			Coach theCoach = context.getBean("myCoach",Coach.class);
 			System.out.println(theCoach.getDailyWorkout());
